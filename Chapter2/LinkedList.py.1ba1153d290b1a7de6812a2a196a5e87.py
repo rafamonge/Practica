@@ -59,7 +59,7 @@ class LinkedList:
         slow = self.Head
         while fast.Next != None:
             fast = fast.Next
-            if i > 1:
+            if i > 0:
                 i -= 1
                 continue
             slow = slow.Next
@@ -98,7 +98,7 @@ sample_list = LinkedList()
 for i in range(10, 20, 1):
     sample_list.InsertBeginning(i)
 print(sample_list)
-sample_list.ith_element_fast_slow(1)
+sample_list.ith_element_fast_slow(9)
 
 
 # %%
